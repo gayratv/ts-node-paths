@@ -10,7 +10,7 @@
     "lint": "npx eslint ./src",
     "format": "npx eslint ./src --fix",
     "start": "ts-node -r tsconfig-paths/register src/index",
-    "start2": "node --loader ./src/loader.js  src/index"
+    "start2": "node --loader ./src/loader.js  src/main"
   },
   "keywords": [],
   "author": "",
