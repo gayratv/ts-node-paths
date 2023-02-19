@@ -8,3 +8,7 @@ But then I start to use ESM modules:
 3. Add "esm": true and  "experimentalSpecifierResolution": "node" to ts-node sections of tsconfig.json
 
 After convert to ESM modules ts-node paths stop working.
+
+problem resolving with this issue:
+
+https://github.com/TypeStrong/ts-node/discussions/1450

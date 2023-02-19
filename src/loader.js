@@ -19,11 +19,6 @@ export function resolve(specifier, ctx, defaultResolve) {
     if (match) return resolveTs(pathToFileURL(`${match}.js`).href, ctx, defaultResolve);
   }
   return resolveTs(specifier, ctx, defaultResolve);
-
-  /* const match = matchPath(specifier);
-  return match
-    ? resolveTs(pathToFileURL(`${match}`).href, ctx, defaultResolve)
-    : resolveTs(specifier, ctx, defaultResolve);*/
 }
 
 export { load, transformSource } from 'ts-node/esm';
