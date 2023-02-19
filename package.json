@@ -1,5 +1,6 @@
 {
   "name": "test path for ts-node",
+  "type": "module",
   "version": "1.0.0",
   "description": "",
   "engines": {
@@ -8,7 +9,7 @@
   "scripts": {
     "lint": "npx eslint ./src",
     "format": "npx eslint ./src --fix",
-    "start": "ts-node -r tsconfig-paths/register src/index.ts"
+    "start": "ts-node -r tsconfig-paths/register src/index"
   },
   "keywords": [],
   "author": "",

@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
+    "module": "Node16",
     "target": "ESNext",
-    "moduleResolution": "Node16",
     "outDir": "./build",
     "baseUrl": "./src",
     "paths": {
@@ -11,13 +11,13 @@
   "include": ["src/**/*"],
   "exclude": [
     "node_modules",
-    "**/*.test.ts"
   ],
 
   "ts-node": {
+    "esm": true,
+    "experimentalSpecifierResolution": "node",
     "transpileOnly": true,
     "files": true,
-    "experimentalResolver": true,
     "require": ["tsconfig-paths/register"]
   }
 }
