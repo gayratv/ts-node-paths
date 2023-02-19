@@ -8,7 +8,7 @@
   "scripts": {
     "lint": "npx eslint ./src",
     "format": "npx eslint ./src --fix",
-    "start": "ts-node -r tsconfig-paths/register src/index.ts"
+    "start": "ts-node src/index.ts"
   },
   "keywords": [],
   "author": "",
