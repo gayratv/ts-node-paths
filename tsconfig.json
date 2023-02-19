@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "moduleResolution": "Node16",
+    "outDir": "./build",
+    "baseUrl": "./src",
+    "paths": {
+      "@helpers/*": ["helpers/sub1/*"]
+    }
+  },
+  "include": ["src/**/*"],
+  "exclude": [
+    "node_modules",
+    "**/*.test.ts"
+  ],
+
+  "ts-node": {
+    "transpileOnly": true,
+    "files": true,
+    "experimentalResolver": true,
+    "require": ["tsconfig-paths/register"]
+  }
+}
